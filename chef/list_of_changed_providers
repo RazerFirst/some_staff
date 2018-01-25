@@ -1,0 +1,7 @@
+properties = new_resource.class.state_properties.map { |p| p.name } # if properties.empty?
+properties = properties.map { |p| p.to_sym }
+        # Collect the list of modified properties
+specified_properties = properties.select { |property| new_resource.property_is_set?(property) }
+
+p specified_properties
+
