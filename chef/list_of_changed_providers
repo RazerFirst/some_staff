@@ -5,3 +5,4 @@ specified_properties = properties.select { |property| new_resource.property_is_s
 
 p specified_properties
 
+
